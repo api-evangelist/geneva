@@ -1,8 +1,26 @@
 aid: geneva
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/geneva.png
 name: Geneva
-description: 'Geneva is a company surfaced as a portfolio company of multicoin-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: crypto-web3. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Geneva is an all-in-one communication app for groups, clubs, and communities
+  — "the online place to find your offline people." It bundles full-featured group
+  chat (threaded replies, reactions, GIFs, attachments, polls, pins), audio/video
+  rooms and livestreaming for hundreds of viewers, event planning, and wallet-connect
+  with token-gated rooms for tokenized communities. Geneva ships as free iOS, Android,
+  and web apps and was acquired by Bumble Inc. This API Evangelist profile entered
+  the network as a VC-portfolio-sourced stub; the company publishes a consumer app
+  with no public developer API, OpenAPI, SDK, or documentation surface as of this
+  enrichment pass.'
 url: https://raw.githubusercontent.com/api-evangelist/geneva/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +28,20 @@ x-backed-by:
 - multicoin-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment-note: 'No public developer/API surface found; geneva.com resolves to a
+  consumer group-communication app (acquired by Bumble). VC lineage from the source
+  scrape is unverified against Multicoin''s published portfolio.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Social
+- Community
+- Group Chat
+- Messaging
+- Communities
+- Consumer App
 - Crypto Web3
 apis: []
 maintainers:
@@ -23,5 +50,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/geneva-domain-security.yml
 - type: Website
-  url: https://geneva.com
+  url: https://www.geneva.com/
+- type: About
+  url: https://www.geneva.com/about
+- type: SignUp
+  url: https://app.geneva.com/
+- type: Support
+  url: https://genevahq.notion.site/Geneva-Help-Center-b909b5860e8941019f25a4934f18fa29
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
