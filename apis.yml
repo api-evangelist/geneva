@@ -31,7 +31,7 @@ x-tier-reason: portfolio-lead
 x-enrichment-note: 'No public developer/API surface found; geneva.com resolves to a
   consumer group-communication app (acquired by Bumble). VC lineage from the source
   scrape is unverified against Multicoin''s published portfolio.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
